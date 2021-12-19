@@ -1,0 +1,48 @@
+{
+  "name": "stone-oak",
+  "version": "1.0.0",
+  "description": "An eval project inspired User Generated Code runner for Javascript using Acorn and SandBoxr",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c scripts/.rollup-development.config.js",
+    "prepublishOnly": "rollup -c scripts/.rollup-production.config.js",
+    "lint": "eslint ./src",
+    "generate-changelog": "conventional-changelog -p angular -i CHANGELOG.md -o CHANGELOG.md",
+    "preview-changelog": "conventional-changelog -p angular -i CHANGELOG.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M3TIOR/stone-oak.git"
+  },
+  "keywords": [
+    "eval",
+    "safe",
+    "User-Submitted-Code",
+    "User-Generated-Code",
+    "runner",
+    "execution",
+    "vm",
+    "module"
+  ],
+  "author": "Ruby Allison Rose (Aka. M3TIOR)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/M3TIOR/stone-oak/issues"
+  },
+  "homepage": "https://github.com/M3TIOR/stone-oak#readme",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^8.0.1",
+    "conventional-changelog": "^3.1.21",
+    "eslint": "6",
+    "eslint-plugin-jest": "23",
+    "eslint-plugin-jsdoc": "24",
+    "jest": "^26.1.0",
+    "rollup": "2",
+    "rollup-plugin-terser": "5",
+    "terser": "4"
+  },
+  "dependencies": {
+    "acorn": "^7.3.1",
+    "sandboxr": "^0.16.2"
+  }
+}
